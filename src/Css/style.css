@@ -12,8 +12,8 @@
       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.082);
   }
   
-  .iteamsdetails{
-      max-width: 800px;
+  .itemsdetails{
+      max-width: 700px;
       margin: auto;
       display: flex;
       justify-content: space-between;
@@ -24,20 +24,19 @@
       flex: .4;
   }
   .items_img img{
-      width: 20rem;
+      width: 16rem;
       border-radius: 5px;
   }
-  
-  .details{
-      flex: .5;
-  };
+  .details {
+    flex: -0.5 1;
+}
   
   .rating{
       background-color: green;
   }
   
   @media (max-width:772px){
-      .iteamsdetails{
+      .itemsdetails{
           flex-direction: column;
           align-items: center;
           justify-content: center;
