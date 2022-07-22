@@ -9,6 +9,13 @@ export const cartreducer = (state = INIT_STATE, action) => {
                 ...state,
                 carts: [...state.carts, action.payload]
             }
+        case "DELETE":
+            const data = state.carts.filter((element)=>element.id!==action.payload)
+            return {
+                ...state,
+                carts:data
+            }
+
         default:
             return state
     }

@@ -5,3 +5,10 @@ export const ADD = (item) => {
         payload: item
     }
 }
+
+export const DELETE = (id) => {
+    return {
+        type: "DELETE",
+        payload: id
+    }
+}
