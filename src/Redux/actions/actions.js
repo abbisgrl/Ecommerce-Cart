@@ -12,3 +12,10 @@ export const DELETE = (id) => {
         payload: id
     }
 }
+
+export const REMOVE = (item) => {
+    return {
+        type: "REMOVE",
+        payload: item
+    }
+}
