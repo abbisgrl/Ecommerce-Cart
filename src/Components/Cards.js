@@ -5,9 +5,13 @@ import Cardsdata from './CardsData';
 import '../Css/style.css'
 
 import '../Css/style.css'
+import { useDispatch } from 'react-redux';
 const Cards = () => {
     const [data, setData] = useState(Cardsdata);
     console.log(data)
+
+    const dispatch = useDispatch();
+    const 
 
     return (
         <div className='container mt-3'>
@@ -27,7 +31,10 @@ const Cards = () => {
                                         </Card.Text>
 
                                         <div className='button_div d-flex justify-content-center'>
-                                            <Button variant="primary" className='col-lg-12'>Add To Cart</Button>
+                                            <Button
+                                                variant="primary"
+                                                className='col-lg-12'
+                                                onClick={() => send()} >Add To Cart</Button>
                                         </div>
 
                                     </Card.Body>

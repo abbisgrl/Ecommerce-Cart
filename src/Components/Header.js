@@ -4,9 +4,13 @@ import Badge from '@mui/material/Badge';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Menu from '@mui/material/Menu';
+import {useSelector} from 'react-redux';
 import { Link } from "react-router-dom";
 
 const Header = () => {
+    const getData = useSelector((state)=>state.cartreducer)
+    console.log(getData);
+
     const [anchorEl, setAnchorEl] = useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
