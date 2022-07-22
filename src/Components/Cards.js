@@ -24,7 +24,7 @@ const Cards = () => {
                     data.map((element, id) => {
                         return (
                             <>
-                                <Card style={{ width: '18rem', border: 'none' }} className="mx-4 mt-4 card_style">
+                                <Card style={{ width: '18rem', border: 'none' }} className="mx-4 mt-4 bg-info text-white card_style">
                                     <Card.Img variant="top" src={element.imgdata} style={{ height: '16rem' }} className='mt-3' />
                                     <Card.Body>
                                         <Card.Title>{element.rname}</Card.Title>

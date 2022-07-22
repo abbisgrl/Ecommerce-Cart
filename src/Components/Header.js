@@ -32,7 +32,7 @@ const Header = () => {
     const total = () => {
         let price = 0;
         getData.map((ele, k) => {
-            price = ele.price*ele.qnty + price
+            price = ele.price * ele.qnty + price
         })
         setPrice(price);
     }
@@ -76,7 +76,7 @@ const Header = () => {
                     >
                         {
                             getData.length ?
-                                <div className='card_details' style={{ width: '24rem', padding: 10 }}>
+                                <div className='card_details' style={{ width: '24rem', padding: 10}}>
                                     <Table>
                                         <thead>
                                             <tr>

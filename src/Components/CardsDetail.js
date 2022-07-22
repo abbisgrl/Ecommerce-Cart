@@ -40,7 +40,7 @@ const CardsDetail = () => {
 
     return (
         <div className='container mt-2'>
-            <h2 className='text-center'>Items Details Page</h2>
+            <h2 className='text-center'>FOOD DETAIL</h2>
             <section className='container mt-3'>
                 <div className='itemsdetails'>
                     {
