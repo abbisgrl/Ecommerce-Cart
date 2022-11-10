@@ -17,6 +17,7 @@ const CardsDetail = () => {
             return e.id == id
         });
         setData(compareData);
+
     }
 
 
